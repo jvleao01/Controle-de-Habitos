@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Ritmo: iniciar app no computador",
+      "type": "shell",
+      "command": "${workspaceFolder}\\iniciar_app.bat",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "panel": "dedicated",
+        "reveal": "always",
+        "focus": false
+      },
+      "problemMatcher": []
+    }
+  ]
+}

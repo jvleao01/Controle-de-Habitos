@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d32">
+  <title>Ritmo — seus hábitos, em equilíbrio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <aside class="sidebar" aria-label="Navegação principal">
+    <a class="brand" href="#dashboard" aria-label="Ritmo, início"><span class="brand-mark">r.</span><span class="brand-name">ritmo</span></a>
+    <span class="nav-label">MENU</span>
+    <nav id="navigation">
+      <button class="nav-item active" data-page="dashboard" title="Dashboard"><i data-lucide="layout-dashboard"></i><span>Dashboard</span></button>
+      <button class="nav-item" data-page="atividade" title="Atividade Física"><i data-lucide="footprints"></i><span>Atividade Física</span></button>
+      <button class="nav-item" data-page="leitura" title="Leitura"><i data-lucide="book-open"></i><span>Leitura</span></button>
+      <button class="nav-item" data-page="estudos" title="Estudos"><i data-lucide="graduation-cap"></i><span>Estudos</span></button>
+      <button class="nav-item" data-page="financeiro" title="Financeiro"><i data-lucide="wallet"></i><span>Financeiro</span></button>
+      <button class="nav-item" data-page="sono" title="Tempo de sono"><i data-lucide="moon-star"></i><span>Tempo de sono</span></button>
+      <button class="nav-item" data-page="alimentacao" title="Alimentação"><i data-lucide="salad"></i><span>Alimentação</span></button>
+    </nav>
+    <div class="sidebar-foot"><span class="status-dot"></span><span>Seu espaço pessoal</span></div>
+  </aside>
+
+  <main class="main-content">
+    <header class="topbar">
+      <div class="crumb"><span>SEU ESPAÇO</span><i data-lucide="chevron-right"></i><strong id="breadcrumb">Dashboard</strong></div>
+      <div class="top-actions"><span class="today-label" id="today-label"></span><div class="avatar" aria-label="Perfil">J</div></div>
+    </header>
+    <div id="page-content" class="page-content"></div>
+    <footer><span>Pequenos passos, todos os dias.</span><span class="sync-status" id="sync-status"><span class="status-dot"></span>Salvo neste dispositivo</span></footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
