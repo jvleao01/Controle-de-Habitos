@@ -161,10 +161,10 @@ function dashboardMarkup() {
 function chartOptions(showPercent = false) {
   return {
     responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { display: false }, tooltip: { backgroundColor: "#252b34", padding: 10, titleFont: { family: "DM Sans", size: 10 }, bodyFont: { family: "DM Sans", size: 10 }, callbacks: showPercent ? { label: (context) => ` ${Math.round(context.parsed.y)}% da meta` } : {} } },
+    plugins: { legend: { display: false }, tooltip: { backgroundColor: "#252b34", padding: 10, titleFont: { family: "Inter", size: 10 }, bodyFont: { family: "Inter", size: 10 }, callbacks: showPercent ? { label: (context) => ` ${Math.round(context.parsed.y)}% da meta` } : {} } },
     scales: {
-      x: { grid: { display: false }, border: { display: false }, ticks: { color: "#a5afbd", font: { family: "DM Sans", size: 9 } } },
-      y: { beginAtZero: true, border: { display: false }, grid: { color: "#2d333d", drawTicks: false }, ticks: { color: "#a5afbd", padding: 8, font: { family: "DM Sans", size: 9 }, callback: (value) => showPercent ? `${value}%` : money(value) } },
+      x: { grid: { display: false }, border: { display: false }, ticks: { color: "#a5afbd", font: { family: "Inter", size: 9 } } },
+      y: { beginAtZero: true, border: { display: false }, grid: { color: "#2d333d", drawTicks: false }, ticks: { color: "#a5afbd", padding: 8, font: { family: "Inter", size: 9 }, callback: (value) => showPercent ? `${value}%` : money(value) } },
     },
   };
 }

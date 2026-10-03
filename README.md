@@ -19,7 +19,7 @@ O app pode ser usado sem banco de dados: nesse modo, os registros ficam no `loca
 - Python e Flask para servir a aplicação e fornecer a API HTTP.
 - MySQL opcional para persistência no servidor; `mysql-connector-python` faz a conexão.
 - HTML, CSS e JavaScript sem framework no navegador.
-- Chart.js para gráficos e Lucide para ícones. Essas duas bibliotecas e as fontes DM Sans e Playfair Display são carregadas por CDN e precisam de internet para aparecer corretamente.
+- Chart.js para gráficos e Lucide para ícones. Essas duas bibliotecas e as fontes Montserrat e Inter são carregadas por CDN e precisam de internet para aparecer corretamente.
 
 ## Arquivos e pastas
 
